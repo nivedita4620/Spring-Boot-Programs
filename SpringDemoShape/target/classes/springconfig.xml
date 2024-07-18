@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="Nivedita" class="com.anudip.springdemo.Painter">
+<constructor-arg ref="rectangle"></constructor-arg></bean>
+
+<bean id="circle" class="com.anudip.springdemo.Circle">
+<constructor-arg name="color" value="Green"></constructor-arg></bean>
+
+<bean id="rectangle" class="com.anudip.springdemo.Rectangle">
+<property name="color" value="red"></property>
+</bean>
+<bean id="Akanksha" class ="com.anudip.springdemo.Singer"></bean>
+</beans>
